@@ -1,0 +1,24 @@
+algoritmo "Cashback_Progressivo"
+
+var
+   valorCompra: real
+   cashback: real
+
+inicio
+
+   escreva("Digite o valor da compra: ")
+   leia(valorCompra)
+
+   se (valorCompra > 500) entao
+      cashback <- valorCompra * 0.10
+   senao
+      se (valorCompra >= 200) e (valorCompra <= 500) entao
+         cashback <- valorCompra * 0.05
+      senao
+         cashback <- 0
+      fimse
+   fimse
+
+   escreva("Valor do cashback: R$ ", cashback)
+
+fimalgoritmo

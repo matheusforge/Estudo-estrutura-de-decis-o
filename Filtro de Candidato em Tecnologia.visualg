@@ -1,0 +1,21 @@
+algoritmo "Filtro_Candidato_Tecnologia"
+
+var
+   idade: inteiro
+   projetos: inteiro
+
+inicio
+
+   escreva("Digite sua idade: ")
+   leia(idade)
+
+   escreva("Digite a quantidade de projetos no GitHub: ")
+   leia(projetos)
+
+   se (idade >= 18) e (projetos >= 5) entao
+      escreva("Candidato aprovado para entrevista")
+   senao
+      escreva("Candidato nao atende aos requisitos")
+   fimse
+
+fimalgoritmo

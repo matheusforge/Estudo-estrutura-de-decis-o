@@ -1,0 +1,24 @@
+algoritmo "Simulador_CDB"
+
+var
+   valor: real
+   meses: inteiro
+   taxa: real
+
+inicio
+
+   escreva("Digite o valor do investimento: ")
+   leia(valor)
+
+   escreva("Digite o prazo em meses: ")
+   leia(meses)
+
+   se (meses > 12) entao
+      taxa <- 0.12
+   senao
+      taxa <- 0.08
+   fimse
+
+   escreva("A taxa aplicada sera de ", taxa * 100, "% ao ano")
+
+fimalgoritmo

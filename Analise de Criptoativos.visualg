@@ -1,0 +1,25 @@
+algoritmo "Analise_Criptoativos"
+
+var
+   nome: caractere
+   variacao: real
+
+inicio
+
+   escreva("Digite o nome da criptomoeda: ")
+   leia(nome)
+
+   escreva("Digite a variacao percentual nas ultimas 24h: ")
+   leia(variacao)
+
+   se (variacao > 10) entao
+      escreva(nome, ": Alta Relevante")
+   senao
+      se (variacao < -10) entao
+         escreva(nome, ": Correcao Forte")
+      senao
+         escreva(nome, ": Estabilidade")
+      fimse
+   fimse
+
+fimalgoritmo

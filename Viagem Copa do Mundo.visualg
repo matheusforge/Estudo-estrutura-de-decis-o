@@ -1,0 +1,19 @@
+algoritmo "Viagem_Copa_2026"
+
+var
+   valor: real
+   falta: real
+
+inicio
+
+   escreva("Digite o valor acumulado: ")
+   leia(valor)
+
+   se (valor >= 25000) entao
+      escreva("Partiu America do Norte")
+   senao
+      falta <- 25000 - valor
+      escreva("Faltam R$ ", falta, " para atingir a meta")
+   fimse
+
+fimalgoritmo
