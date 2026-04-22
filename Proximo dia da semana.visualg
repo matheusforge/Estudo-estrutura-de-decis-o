@@ -1,0 +1,35 @@
+algoritmo "dias da semana"
+
+var:
+  dia: caracter
+
+inicio
+
+  escreval("Olá Digite um dia da semana:")
+  leia(dia)
+
+  escolha dia
+    caso "Segunda"
+      escreva("O Proximo dia da semana é Terça")
+    caso "Terça"
+      escreva("O Proximo dia da semana é Quarta")
+    caso "Quarta"
+      escreva("O Proximo dia da semana é Quinta")
+    caso "Quinta"
+      escreva("O Proximo dia da semana é Sexta")
+    caso "Sexta"
+      escreva("O Proximo dia da semana é Sabado")
+    caso "Sabado"
+      escreva("O Proximo dia da semana é Domingo")
+    caso "Domingo"
+      escreva("O Proximo dia da semana é Segunda")
+      outrocaso escreva("Dia invalido")
+  fimescolha
+
+
+
+
+
+
+
+fimalgoritmo
